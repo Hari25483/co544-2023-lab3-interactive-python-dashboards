@@ -1,5 +1,6 @@
 # Create the Dash app
 # external_stylesheets = ['https://fonts.googleapis.com/css2?family=Open+Sans&display=swap']
+from dash import dcc, html
 
 app = dash.Dash(__name__)
 # app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
