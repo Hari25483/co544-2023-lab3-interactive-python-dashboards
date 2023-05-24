@@ -7,6 +7,7 @@ import plotly.express as px
 app = dash.Dash(__name__)
 from dash.dependencies import Input, Output, State
 import warnings
+from sklearn.model_selection import train_test_split
 import pandas as np
 from sklearn.linear_model import LogisticRegression
 logreg_model = LogisticRegression()
