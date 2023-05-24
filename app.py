@@ -161,7 +161,6 @@
 #     app.run_server(debug=False)
 
 from flask import Flask,request, jsonify
-import cv2
 import numpy as np
 
 app = Flask(__name__)
