@@ -5,6 +5,12 @@ import pandas as pd
 from dash import dcc, html
 
 app = dash.Dash(__name__)
+from dash.dependencies import Input, Output, State
+import warnings
+
+warnings.filterwarnings("ignore")
+
+data = pd.read_csv('data/winequality-red.csv')
 # app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
 server = app.server
