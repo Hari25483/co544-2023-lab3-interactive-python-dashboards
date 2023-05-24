@@ -3,10 +3,13 @@
 import dash
 import pandas as pd
 from dash import dcc, html
-
+import plotly.express as px
 app = dash.Dash(__name__)
 from dash.dependencies import Input, Output, State
 import warnings
+import pandas as np
+from sklearn.linear_model import LogisticRegression
+logreg_model = LogisticRegression()
 
 warnings.filterwarnings("ignore")
 
