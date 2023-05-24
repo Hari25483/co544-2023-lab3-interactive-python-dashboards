@@ -1,5 +1,7 @@
 # Create the Dash app
 # external_stylesheets = ['https://fonts.googleapis.com/css2?family=Open+Sans&display=swap']
+import dash
+import pandas as pd
 from dash import dcc, html
 
 app = dash.Dash(__name__)
